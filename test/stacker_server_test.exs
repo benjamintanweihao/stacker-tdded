@@ -1,8 +1,8 @@
 defmodule StackerServerTest do
-  use ExUnit.Case
+  use ExUnit.Case, async: true
 
   setup do
-    Stacker.Server.start([])
+    Stacker.Server.start_link([])
   end
 
   teardown do
